@@ -1,0 +1,254 @@
+/* Reseteo de los valores predeterminados del navegador */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Definir Medida REM como media general al HTML */
+html{
+    font-size: 62.5%;
+}
+/* Estilo a la barra de navegación: Fijar nav y establecer el ancho */
+header{
+    position: fixed;
+    width: 100vw;
+}
+/* Estilo a la barra de navegación */
+.browser {
+    background-color: #2E4C6D;
+    display: flex;
+    overflow: hidden;
+    justify-content: left;
+    align-items: center;
+    height: 6rem;
+}
+/* Estilo de los links en la barra de navegación */
+.browser a {
+    float: left;
+    padding: 1.4rem 1.6rem;
+    font-size: 2rem;
+    font-family:'Gill Sans MT', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+/* Estilo sobre / de la barra de navegación */
+.nav{
+    padding: 1.4rem 0px;
+    font-size: 2rem;
+    color: white;
+}
+/* Estilo a la pseudo clase :hover con los link: a */
+a:hover{
+    background-color: #BBC8DD;
+    border-radius: 0.5rem;
+    color: #323232;
+}
+/* Estilo de contenedor de inicio*/
+.home{
+    display: flex;
+}
+/* Estilo al bloque de fondo */
+.background{
+    display: inline-block;
+    background-image: url(./images/blanco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    width: 80%;
+    height: 50rem;
+}
+/* Estilo al titulo del bloque de fondo */
+.title{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2.5rem;
+    text-align: left;
+    color: #1B1A17;
+    margin: 40rem 0 0 10rem;
+}
+/* Estilo a la barra lateral derecha */
+.bar_left{
+    float: right;
+    background-color: white;
+    margin: 0 auto;
+    width: 20%;
+    height: 50rem;
+}
+/* Estilo al bloque contenedor de la imagen */
+figure{
+    margin: 9.5rem 0 3rem 0;
+}
+/* Estilo sobre la imagen de la barra lateral */
+.image-profile{
+    display: block;
+    margin: 0 auto;
+    width: 18rem;
+    height: 18rem;
+    max-width: 100%;
+    border-radius: 50%;
+}
+/* Estilo sobre el bloque de presentation */
+.presentation {
+    margin: 2rem;  
+}
+.present{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    font-weight: bold;
+
+}
+/* Estilo de la sección dos */
+/* Estilo al bloque education */
+.education{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    background-color: #BBC8DD;
+    color: #1B1A17;
+    padding: 4rem 0;
+} 
+.education div {
+    padding: 2rem;
+}
+
+/* Estilo de la sección tres */
+/* Estilo al bloque habilitys*/
+.habilitys{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    background-color: white;
+    color: #2E4C6D;
+    padding: 4rem 0;
+} 
+.habilitys div {
+    padding: 2rem;
+}
+
+/* Estilo de la sección cuatro */
+/* Estilo al bloque hobbies */
+.hobbies{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    background-color: #BBC8DD;
+    color: #1B1A17;
+    padding: 4rem 0;
+} 
+.hobbies div {
+    padding: 2rem;
+}
+
+/* Estilo de la sección cinco */
+/* Estilo al bloque contact, grid */
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    background-color: white;
+    color: #2E4C6D;
+    padding: 4rem 0;
+} 
+.contact div {
+    padding: 2rem;
+}
+.div-contact{
+    display: block;
+}
+
+/* Estilo a los iconos teléfono e email */
+.name{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.2rem 0.5rem;
+}
+
+/* Estilo al pie de página */
+footer{
+    background-color: #2E4C6D;
+    color: white;
+    font-size: 1.5rem;
+    font-family:'Gill Sans MT', sans-serif;
+    text-align: right;
+    padding: 2rem 5rem 2rem 0;
+    height: 5rem;
+}
+
+/* Estilo a todos los div con la clase "border"*/
+.border{
+    border-bottom: 0.7rem solid #1B1A17;
+    width: 7rem;
+    margin-top: 0.8rem;
+    padding: 0 !important;
+}
+/* Estilo de la subclase "white" para algunos div (section education, section hobbies) */
+.white {
+    border-bottom: 0.7rem solid white;
+}
+
+/* Estilo a todas las etiquetas h2: subtitulos */
+.subtitle{
+    font-family:'Gill Sans MT', sans-serif;
+    font-size: 4.5rem; 
+}
+
+/* Estilo a todas las etiquetas p: parrafos */
+.paragraph{
+    font-family:'Gill Sans MT', sans-serif;;
+    font-size: 2rem;
+    padding: 0.3rem 0;
+}
+
+/* Estilo a todas las listas desordenadas  */
+.skills, .pasatiempos {
+    padding: 0.8rem 0 0.8rem 3rem;
+    font-family:'Gill Sans MT', sans-serif;
+    font-size: 2rem;
+}
+
+/* Estilo a otras clases derivadas de los parrafos */
+.año, .topic{
+    padding-top: 3rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* Estilo de la etique h3: subtitulos-dos  */
+.subtitle-two{
+    font-family:'Gill Sans MT', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px)  {
+    .background{
+        background-size: cover;
+        height: auto;
+        width: 80%;
+    } 
+    .title{
+        font-size: 1.5rem;
+    }
+    .image-profile{
+        width: 12rem;
+        height: 12rem;
+    }
+    .bar_left{
+        width: 20%;
+        height: 50rem;
+    }
+}
+@media screen and (max-width: 480px)  {
+    
+}
+@media screen and (max-width: 320px)  {
+    
+}
+
+
+
+
